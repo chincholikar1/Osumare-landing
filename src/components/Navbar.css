@@ -1,0 +1,106 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 50px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1e40af;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #1e40af;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: black;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn.login {
+  background: transparent;
+  color: #1e40af;
+  border: 1px solid #1e40af;
+}
+
+.nav-btn.login:hover {
+  background: #1e40af;
+  color: white;
+}
+
+.nav-btn.signup {
+  background: #2563eb;
+  color: white;
+}
+
+.nav-btn.signup:hover {
+  background: #1e3a8a;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  color: #1e40af;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links,
+  .nav-buttons {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px 0;
+  }
+
+  .nav-links.show,
+  .nav-buttons.show {
+    display: flex;
+  }
+}

@@ -1,0 +1,32 @@
+.company-names {
+  text-align: center;
+  padding: 70px 20px;
+  background: #f9fafb;
+}
+
+.company-names h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.names-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.names-container span {
+  font-size: 1.5rem;
+  color: #9ca3af; 
+  font-weight: 500;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.names-container span:hover {
+  color: #2563eb; 
+  transform: translateY(-4px);
+}
